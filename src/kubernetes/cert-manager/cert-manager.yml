@@ -18,10 +18,10 @@ spec:
     helm:
       valueFiles:
         - $values/src/kubernetes/cert-manager/values.yml
-  - repoURL: 'git@github.com:TheLionsRain/homelab-gitops.git'
+  - repoURL: 'https://github.com/TheLionsRain/homelab-gitops.git'
     targetRevision: HEAD
     ref: values
-  - repoURL: 'git@github.com:TheLionsRain/homelab-gitops.git'
+  - repoURL: 'https://github.com/TheLionsRain/homelab-gitops.git'
     path: src/kubernetes/cert-manager/manifests
     targetRevision: HEAD
   syncPolicy:
