@@ -12,8 +12,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - chart: nginx-gateway
-    repoURL: oci://ghcr.io/nginx/charts/nginx-gateway-fabric
+  - repoURL: ghcr.io/nginx/charts
+    chart: nginx-gateway-fabric
     targetRevision: 1.6.2
   - repoURL: 'https://github.com/TheLionsRain/homelab-gitops.git'
     path: src/kubernetes/nginx-gateway/manifests
